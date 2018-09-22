@@ -1,0 +1,430 @@
+body {
+    box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #7e24fa;
+}
+
+.login-col {
+    background-color: #f4ecff;
+
+}
+
+.submit-btn {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color:  #7e24fa;
+    color: #ffffff;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    /*border-radius: 0px 0px 5px 5px;*/
+}
+
+.login-col form {
+    position: relative;
+    top: -16rem;
+}
+
+
+.login-col form input {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 8.5rem;
+    border: 1px solid #f4ecff;
+}
+
+.login-col form input:first-child {
+   
+    border-radius: 10px 10px 0px 0px;
+    /*border-radius: 5px 5px 0px 0px;*/
+}
+
+.checktorem {
+    text-align: center;
+    position: relative;
+    top: -1rem;
+}
+
+.check-box {
+    width: 40px;
+    height: 40px;
+/*    width: 20px;
+    height: 20px;*/
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+    border: 2px solid #7e24fa;
+    border-radius: 8px;
+}
+
+.check-box:checked {
+    background-color: #7e24fa; 
+    box-shadow: inset 0px 0px 0px 2.5px #fff;
+}
+
+.check-label {
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    color: #7e24fa;
+    font-weight: bold;
+    position: relative;
+    bottom: 10px;
+}
+
+.logo-col {
+    background-color: #7e24fa;
+    height: 50rem;
+}
+
+.logo-col h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.logo-col svg {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    height: auto;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: white;
+    border: 5px solid #caaef2;
+    border-radius: 20px;
+}
+
+.loginways {
+    margin-bottom: 14rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.loginways h2 {
+    color: #7e24fa;
+    margin-bottom: 2rem;
+}
+
+.loginways svg {
+    width: 8%;
+    padding: 1.1rem;
+    margin: 1.5rem;
+    height: auto;
+    fill: #7e24fa;
+    background-color: #e4d2ff;
+    border-radius: 50%;
+}
+
+.loader {
+    position: relative;
+    left: -5rem;
+    top: 2rem;
+}
+
+.error {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #ffffff;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: relative;
+    top: -105px;
+    left: 430px;
+
+}
+
+    /* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/*logged in page*/
+.success {
+    background-color: #7e24fa;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+    height: 58.5rem;
+}
+
+.logged-info {
+    position: relative;
+    top: -10rem;
+}
+
+.logged-info h1 {
+    font-size: 4.5rem;
+    font-weight: 450;
+}
+
+.logged-info p {
+    font-size: 3rem;
+    font-weight: 450;
+}
+
+.success button {
+    background-color: #ffffff;
+    color: #7e24fa;
+    width: 40%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    border: 1px solid #7e24fa;
+    border-radius: 70px;
+    position: relative;
+    top: 15rem;
+}
+
+
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #caaef2;
+    opacity: 1; /* Firefox */
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #caaef2;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #caaef2;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+/*Medium devices (iphone x and up) */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) { 
+/*    .logo-col h1 {
+        color: green;
+    }*/
+    
+    .login-col form input {
+        width: 80%;
+    }
+    
+    .login-col {
+        height: 83rem;
+    }
+       
+    .loginways {
+        position: relative;
+        top: 32rem;
+        margin-bottom: 0;
+    }
+    
+    /*logged in page*/
+    .success {
+        height: 82.5rem;
+    }
+    .logged-info {
+        top: -12rem;
+    }
+
+    .logged-info h1 {
+        font-size: 4rem;
+    }
+
+    .logged-info p {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
+    .success button {
+        top: 10rem;
+    }
+
+}
+
+
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .logo-col h1 {
+    /*    color: yellow;*/
+        font-size: 2rem;
+    }
+    
+    .logo-col {
+        height: 100vh;
+    }
+    
+    .logo-col svg {
+        width: 12%;
+        padding: 1rem;
+        border: 3px solid #caaef2;
+        border-radius: 15px;
+    }
+    
+    .login-col {
+        height: 100vh;
+    }
+    
+    .login-col form, .checktorem, .check-label, .loginways {
+        position: static;
+    }
+    
+    .login-col form {
+        margin-top: 10rem;
+    }
+    
+    .submit-btn {
+        font-size: 1rem;
+        border-radius: 0px 0px 5px 5px;
+    }
+    
+    .login-col form input {
+        width: 40%;
+        height: 3rem;
+    }
+    
+    .login-col form input:first-child {
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    .checktorem {
+        position: relative;
+        top: 9rem;
+    }
+    
+    .check-box {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #7e24fa;
+        border-radius: 5px;
+    }
+    
+    .check-label {
+        font-size: 1rem;
+        padding-left: 0.5rem;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .loginways {
+        position: relative;
+        top: 9rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .loginways h2 {
+        font-size: 1rem;
+        margin-top: 7rem;
+        margin-bottom: 1rem;
+    }
+    
+    .loginways svg {
+        width: 35px;
+        padding: 0.5rem;
+        margin: 0.6rem;
+        height: auto;
+        fill: #7e24fa;
+        background-color: #e4d2ff;
+        border-radius: 50%;
+    }
+    
+    .loader {
+        border: 2px solid #f3f3f3;
+        border-top: 2px solid #ffffff;
+        width: 23px;
+        height: 23px;
+        top: -35px;
+        left: 360px;
+    }
+    
+        /*logged in page*/
+        .success {
+            height: 100vh;
+        }
+        .logged-info {
+            position: static;
+            margin-top: 8rem;
+        }
+
+        .logged-info h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .logged-info p {
+            font-size: 1.2rem;
+        }
+
+        .success button {
+            width: 25%;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 0.5rem;
+        }
+
+
+    
+    
+    
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 1rem;
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-size: 1rem;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        font-size: 1rem;
+    }
+
+}
+
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+/*    .logo-col h1 {
+        color: aqua;
+    }*/
+    
+}
